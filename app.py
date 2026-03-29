@@ -389,7 +389,7 @@ else:
 
 if page == "📊 School Dashboard":
     st.title("Aotearoa School Dashboard")
-    st.caption("(Sample data for demonstration — production version will connect to Ministry of Education API)")
+    st.warning("**SAMPLE DATA** — This demonstration uses representative sample data. Production version will connect to the New Zealand Ministry of Education API.")
 
     # Filters
     col1, col2, col3 = st.columns(3)
@@ -489,7 +489,7 @@ if page == "📊 School Dashboard":
 
 elif page == "🔍 Equity Index Analysis":
     st.title("Equity Index (EQI) Analysis")
-    st.caption("(Sample data for demonstration)")
+    st.warning("**SAMPLE DATA** — Results shown use representative sample data for demonstration purposes.")
 
     st.markdown("""
     The **Equity Index** replaced New Zealand's decile system in January 2023. It uses 37 factors
@@ -569,7 +569,7 @@ elif page == "🔍 Equity Index Analysis":
 
 elif page == "🚩 Māori & Pasifika Focus":
     st.title("Māori & Pasifika Achievement Focus")
-    st.caption("(Sample data for demonstration)")
+    st.warning("**SAMPLE DATA** — Results shown use representative sample data for demonstration purposes.")
 
     st.markdown(f"""
     **The Equity Crisis:** Despite having strong accountability infrastructure, New Zealand faces
@@ -645,7 +645,7 @@ elif page == "🚩 Māori & Pasifika Focus":
 
 elif page == "🗺️ Regional View":
     st.title("Regional Analysis")
-    st.caption("(Sample data for demonstration)")
+    st.warning("**SAMPLE DATA** — Results shown use representative sample data for demonstration purposes.")
 
     # Regional summary
     regional_summary = df.groupby("region").agg({
