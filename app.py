@@ -319,8 +319,12 @@ def prepare_dataframe(schools):
 # =============================================================================
 
 with st.sidebar:
-    # Display Silver Fern flag
-    st.image("nz-flag.svg", use_container_width=True)
+    # Display Silver Fern flag from hosted URL
+    st.markdown("""
+        <div style="text-align: center; padding: 10px 0;">
+            <img src="https://h-edu.solutions/assets/nz-silver-fern.svg" style="width: 100%; max-width: 200px; margin-bottom: 10px;" alt="Silver Fern Flag">
+        </div>
+    """, unsafe_allow_html=True)
     st.markdown(f"""
         <div style="text-align: center; padding: 10px 0;">
             <h2 style="color: white; margin: 10px 0;">VERA-NZ</h2>
