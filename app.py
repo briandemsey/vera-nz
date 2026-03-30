@@ -296,6 +296,23 @@ def prepare_dataframe(schools):
 # =============================================================================
 
 with st.sidebar:
+    # Back arrow to h-edu.solutions
+    st.markdown("""
+        <a href="https://h-edu.solutions" target="_self" style="
+            display: flex;
+            align-items: center;
+            color: white;
+            text-decoration: none;
+            font-size: 0.9rem;
+            padding: 8px 0;
+            margin-bottom: 10px;
+            opacity: 0.9;
+        ">
+            <span style="font-size: 1.2rem; margin-right: 8px;">←</span>
+            Back to H-EDU
+        </a>
+    """, unsafe_allow_html=True)
+
     # Display Silver Fern flag from hosted URL
     st.markdown("""
         <div style="text-align: center; padding: 10px 0;">
